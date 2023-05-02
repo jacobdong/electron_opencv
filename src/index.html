@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Hello World!</title>
+
+  <script>
+
+    const api = window.appOpsAPI;
+
+    const getOpencvStatus = async () => {
+      const result = await api.opencvStatus();
+      window.alert(JSON.stringify(result));
+    }
+  </script>
+</head>
+<body>
+<h1>💖 Hello World!</h1>
+<p>Welcome to your Electron application.</p>
+<button onclick="getOpencvStatus()">获取OPENCV状态</button>
+
+</body>
+</html>
