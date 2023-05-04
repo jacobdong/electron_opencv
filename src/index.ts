@@ -9,6 +9,13 @@ import * as console from "console";
 // 一定要放在 import opencv 之前，
 // 在 import 的时候会自动构建 （当前系统中的环境变量会丢失，在 package.json 中配置
 // 的 opencv 相关属性也会丢失
+
+
+// Make sure to put it before importing opencv,
+// it will be automatically built during the import
+// the environment variables in the current system will be lost,
+// and the opencv-related properties configured in package.json will also be lost during the import.
+
 const env = process.env;
 env.OPENCV4NODEJS_DISABLE_AUTOBUILD = "1"
 import opencv from '@u4/opencv4nodejs'

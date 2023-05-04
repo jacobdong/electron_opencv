@@ -1,6 +1,6 @@
 {
   "name": "electron_opencv",
-  "productName": "opencv_starter",
+  "productName": "electron_opencv",
   "version": "1.0.0",
   "description": "openCV with electron",
   "main": ".webpack/main",
